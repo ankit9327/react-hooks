@@ -14,6 +14,7 @@ useEffect(()=>{
   return (
     <div>
       <h1>Hello useeffect {count}</h1>
+       <h2>This is after 1st push</h2>
       <button onClick={()=>setCount(count+1)}>Click me</button>
     </div>
   );
