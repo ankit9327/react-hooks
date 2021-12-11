@@ -5,7 +5,12 @@ const UseEffctDemo1=()=> {
 
   const [count,setCount]=useState(0);
 useEffect(()=>{
+  if(count>=1){
   document.title=`chats(${count})`
+  }
+  else{
+    document.title=`chats`
+  }
 })
 
  useEffect(()=>{
@@ -13,8 +18,8 @@ useEffect(()=>{
  })
   return (
     <div>
-      <h1>Hello useeffect {count}</h1>
-       <h2>This is after 1st push</h2>
+      <h1>Hello useEffect {count}</h1>
+       
       <button onClick={()=>setCount(count+1)}>Click me</button>
     </div>
   );
